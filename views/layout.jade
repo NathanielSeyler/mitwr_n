@@ -3,17 +3,32 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-    script.
-      function tweett_post() {
-      document.getElementById("tweets").innerHTML += '<p>' + document.getElementById("tw_p").value + '</p>';}
+    link(rel='stylesheet', href='/bootstrap-3.3.4-dist/css/bootstrap.css')
+    script(src='/javascripts/jquery-1.8.2.min.js')
+    script(src='/javascripts/script.js')
   body
     header
-       input(type="text",class="recherche", name="Recherche", value="Rechercher Twitt")
-       input(type="submit",class="recherche", value="Rechercher")
+       .container-narrow
+         .masthead
+           ul(class="nav nav-pills pull-right")
+             li
+               a(href="/") Home
+             li
+               a(href="/inscription") Inscription
+             li
+               a(href="/users") Contact  
+       form(id="connextion")
+          p Username : 
+          input(type="text" id="user_name")
+          p Mot de passe :
+          input(type="password" id="passw")
+          input(type="submit" value="Se connecter")
+       p Nouveau sur Minitwr ?
+       a(type="text" href="/inscription") S'inscrire
     block content
     footer
-       div Voici un lien vers : 
-       a(type="button",class='bouton', href='https://twitter.com/?lang=fr') Twitter
-       p.signature Site fait par Nathaniel 
+        div Voici un lien vers : 
+        a(type="button" class='bouton' href='https://twitter.com/?lang=fr') Twitter
+        p.signature Site fait par Nathaniel 
          
    
