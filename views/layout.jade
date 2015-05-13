@@ -3,6 +3,9 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script.
+      function tweett_post() {
+      document.getElementById("tweets").innerHTML += '<p>' + document.getElementById("tw_p").value + '</p>';}
   body
     header
        input(type="text",class="recherche", name="Recherche", value="Rechercher Twitt")
