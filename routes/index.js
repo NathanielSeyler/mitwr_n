@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Minitwr' });
 });
 
+/* GET inscription page. */
+router.get('/inscription',function(req,res,next) {
+  res.render('inscription', {title : 'Inscription sur Mintwr'});
+});
+
 module.exports = router;
