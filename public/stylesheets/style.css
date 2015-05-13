@@ -1,0 +1,49 @@
+body {
+  padding: 1em;
+  font: 1.4em "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #94B8FF;
+}
+
+a {
+  color: #0000CC;
+}
+
+h1 {
+color: black;
+font-size : 2em;
+text-align : center;
+}
+
+h2 {
+color: black;
+text-align : center;
+}
+
+
+textarea {
+text-align : left;
+background-color : white;
+color : black;
+}
+
+.recherche {
+float : right ;
+}
+
+header {
+height : 200px;
+background : url("http://vignette3.wikia.nocookie.net/borderlands/images/9/91/Vault_logo_white.png/revision/latest/scale-to-width/180?cb=20100114183346") no-repeat ;
+border-bottom : solid ;
+}
+
+footer {
+position : absolute ;
+left:15px;
+bottom :0px;
+width:98%;
+height : 50px;
+}
+
+p.signature {
+text-align : right;
+}
