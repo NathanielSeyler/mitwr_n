@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/bootstrap-3.3.4-dist/css/bootstrap.css')
+    script(src='/javascripts/jquery-1.8.2.min.js')
+    script(src='/javascripts/script.js')
+  body
+  header 
+    .container-narrow
+           .masthead
+             ul(class="nav nav-pills pull-right")
+               li
+                 a(href="/") Home
+               li
+                 a(href="/inscription") Inscription
+               li
+                 a(href="/users") Contact 
+  h1 Tu es une 
+    b BRUTASSE 
+    et tu veux t'inscrire sur LE réseau social de Pandore ???<br> Tu es au bon endroit !!! <br><br>
+  form(id="inscription" action="/users" method="post")
+    p Username :
+    input(type="text" id="username" name="Username" required)
+    p Mot de passe :
+    input(type="password" id="passw" name="passw" required)
+    p Confirmer mot de passe :
+    input(type="password" id="cpassw" name="cpassw" required)
+    p Quel perso preferes-tu ?
+    select(name="perso_p" required)
+       option Le Beau Jack
+       option Roland
+       option MR TORGUE
+       option Lilith
+    input(type="submit" value="S'incrire" onclick="verifie_password")
+  footer
+        div Voici un lien vers : 
+        a(type="button" class='bouton' href='https://twitter.com/?lang=fr') Twitter
+        p.signature Site fait par Nathaniel    
