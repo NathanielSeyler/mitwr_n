@@ -6,6 +6,7 @@ body {
 
 a {
   color: #0000CC;
+  display : inline;
 }
 
 h1 {
@@ -23,27 +24,37 @@ text-align : center;
 textarea {
 text-align : left;
 background-color : white;
-color : black;
-}
-
-.recherche {
-float : right ;
+color :black;
 }
 
 header {
-height : 200px;
-background : url("http://vignette3.wikia.nocookie.net/borderlands/images/9/91/Vault_logo_white.png/revision/latest/scale-to-width/180?cb=20100114183346") no-repeat ;
+height : 300px;
+background : url("/images/borderlands2-logo.png") no-repeat center;
 border-bottom : solid ;
 }
 
 footer {
-position : absolute ;
-left:15px;
+/*position : absolute ;*/
+left:10px;
 bottom :0px;
-width:98%;
-height : 50px;
+width:95%;
 }
 
 p.signature {
 text-align : right;
+}
+
+
+#tweets {
+background-color: #CB9A10;
+border : solid ;
+}
+form#inscription {
+float : center ;
+width: 200px;
+margin: 0 auto;
+}
+
+.recherche {
+float: right;
 }
