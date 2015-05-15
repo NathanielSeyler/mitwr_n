@@ -2,15 +2,15 @@ extends layout
 
 block content
   .recherche
-    input(type="text",class="recherche", id="Recherche", placeholder="Rechercher Twitt" onclik="effacer_contenu(this)")
-    input(type="submit",class="recherche", value="Rechercher")
+    input(type="text" class="recherche" id="Recherche" placeholder="Rechercher Twitt" onclick="this.value='';" )
+    input(type="submit" class="recherche" value="Rechercher")
   <br>
   h1= title 
   h2 Bienvenue 
     b Chasseur de L'Arche
     <br><br><br><br>
   p Tweett à envoyer<br>
-  textarea(id="tw_p" placeholder="Tweet" rows="6" cols="50" maxlength="150" required)
+  textarea(id="tw_p" placeholder="Tweet" rows="6" cols="50" maxlength="150" onclick="this.value='';" required)
   button(onclick="tweett_post()") Envoyer
   p <br>Vos tweets :<br>
   #tweets
