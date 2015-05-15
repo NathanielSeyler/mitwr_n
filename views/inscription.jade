@@ -16,11 +16,11 @@ html
                li
                  a(href="/inscription") Inscription
                li
-                 a(href="/users") Contact 
+                 a(href="/contact") Contact 
   h1 Tu es une 
     b BRUTASSE 
     et tu veux t'inscrire sur LE réseau social de Pandore ???<br> Tu es au bon endroit !!! <br><br>
-  form(id="inscription" action="/users" method="post")
+  form(id="inscription" action="/contact" method="post")
     p Username :
     input(type="text" id="username" name="Username" required)
     p Mot de passe :
@@ -34,7 +34,4 @@ html
        option MR TORGUE
        option Lilith
     input(type="submit" value="S'incrire" onclick="verifie_password")
-  footer
-        div Voici un lien vers : 
-        a(type="button" class='bouton' href='https://twitter.com/?lang=fr') Twitter
-        p.signature Site fait par Nathaniel    
+   
