@@ -29,11 +29,13 @@ function tweett_post() {
     else {document.getElementById("tweets").innerHTML += '<ul>'+'<li>'+user_name+" à écrit le "+d_auj+" à "+h+':'+'</li>'+'</ul>'+'<p>'+tw_p+'</p>';}
 }
 
-function verifie_password() {
-	var password_n = document.getElementById("passw").value;
-	var password_c = document.getElementById("cpassw").value;
-	if(password_n!=password_c) 
-		{alert("Les mots de passe sont differents");}
+function verifie_password(element1,element2) {
+	var verif = true;
+	if(element1.value!=element2.value) 
+		{alert("Les mots de passe sont differents");
+		element1.select();
+		verif = false;}
+	return verif;
 }
      
 function recherche_tweet() {
