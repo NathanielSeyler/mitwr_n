@@ -37,11 +37,10 @@ function verifie_password(element1,element2) {
     else return true;
 }
 
-function effacer_contenu(element){
-	element.value="";
-}
 
-function recherche_tweet() {
+
+/*function recherche_tweet() {
       chaine.indexOf(document.getElementById("recherche").value,debut)	
       
 }
+*/
