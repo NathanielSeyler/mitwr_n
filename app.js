@@ -25,8 +25,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
-//app.get('/inscription', routes.inscription);
-//app.post('/contact', routes.contact);
+app.get('/inscription', function(req,res,next) {
+  res.render('inscription', {title : 'Inscription sur Mintwr'});
+});
+app.post('/c_inscription', function(req,res,next) {
+  res.render('confirmation_inscription', {title : 'Confirmation Inscription', username:req.body.username});
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
