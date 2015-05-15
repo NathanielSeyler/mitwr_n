@@ -30,14 +30,17 @@ function tweett_post() {
 }
 
 function verifie_password(element1,element2) {
-	var verif = true;
 	if(element1.value!=element2.value) 
 		{alert("Les mots de passe sont differents");
 		element1.select();
-		verif = false;}
-	return verif;
+		return false;}
+    else return true;
 }
-     
+
+function effacer_contenu(element){
+	element.value="";
+}
+
 function recherche_tweet() {
       chaine.indexOf(document.getElementById("recherche").value,debut)	
       

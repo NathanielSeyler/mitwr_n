@@ -20,7 +20,7 @@ html
   h1 Tu es une 
     b BRUTASSE 
     et tu veux t'inscrire sur LE réseau social de Pandore ???<br> Tu es au bon endroit !!! <br><br>
-  form(id="inscription" action="/c_inscription" method="post" onSubmit="verifie_password(this.passw,this.cpassw)")
+  form(id="inscription" action="/c_inscription" method="post" onSubmit="return verifie_password(this.passw,this.cpassw)")
     p Username :
     input(type="text" id="username" name="username" required)
     p Mot de passe :
@@ -33,5 +33,5 @@ html
        option Roland
        option MR TORGUE
        option Lilith
-    input(type="submit" value="S'incrire" onclick="verifie_password")
+    input(type="submit" value="S'incrire")
    

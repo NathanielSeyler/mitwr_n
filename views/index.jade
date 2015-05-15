@@ -2,9 +2,8 @@ extends layout
 
 block content
   .recherche
-    form
-      input(type="text",class="recherche", id="Recherche", value="Rechercher Twitt")
-      input(type="submit",class="recherche", value="Rechercher")
+    input(type="text",class="recherche", id="Recherche", placeholder="Rechercher Twitt" onclik="effacer_contenu(this)")
+    input(type="submit",class="recherche", value="Rechercher")
   <br>
   h1= title 
   h2 Bienvenue 
