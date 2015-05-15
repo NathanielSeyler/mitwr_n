@@ -16,5 +16,9 @@ router.get('/c_inscription',function(req,res,next) {
   res.render('confirmation_inscription', {title : 'Confirmation Inscription', username:req.body.username});
 });
 
+/*GET amis pade*/
+router.get('/Amis',function(req,res,next) {
+  res.render('Amis', {title : 'amis'});
+});
 
 module.exports = router;
