@@ -11,9 +11,10 @@ router.get('/inscription',function(req,res,next) {
   res.render('inscription', {title : 'Inscription sur Mintwr'});
 });
 
-/*Get contact page*/
-router.get('/contact',function(req,res,next) {
-  res.render('contact', {title : 'Contact'});
+/*Get confirmation_inscription page*/
+router.get('/c_inscription',function(req,res,next) {
+  res.render('confirmation_inscription', {title : 'Confirmation Inscription', username:req.body.username});
 });
+
 
 module.exports = router;
