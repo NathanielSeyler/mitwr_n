@@ -37,6 +37,12 @@ function verifie_password(element1,element2) {
     else return true;
 }
 
+function bon_mot_de_passe() {
+	var e = document.getElementById("passw").value;
+	if (e.length<8) {document.getElementById("good_passw").innerHTML = "Mot de passe trop court";}
+	else {document.getElementById("good_passw").innerHTML = "Mot de passe assez long";}
+	
+}
 
 
 /*function recherche_tweet() {

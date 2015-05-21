@@ -4,9 +4,11 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+//var mongoose = require('mongoose');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+
 
 var app = express();
 
@@ -51,7 +53,11 @@ if (app.get('env') === 'development') {
       error: err
     });
   });
+  //mongoose.connect('mongodb://localhost/c_inscription');
 }
+
+//mongoose.model('users',{username : String});
+
 
 // production error handler
 // no stacktraces leaked to user

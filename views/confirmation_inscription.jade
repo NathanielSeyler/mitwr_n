@@ -1,11 +1,7 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/bootstrap-3.3.4-dist/css/bootstrap.css')
-    script(src='/javascripts/jquery-1.8.2.min.js')
-    script(src='/javascripts/script.js')
+    include includes/head.jade
   body
   header 
     .container-narrow
@@ -16,7 +12,7 @@ html
                li
                  a(href="/inscription") Inscription
                li
-                 a(href="/Contact") Contact 
+                 a(href="/Amis") Amis 
    h1 Merci 
      b #{username} 
      pour votre inscription.

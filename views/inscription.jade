@@ -1,11 +1,7 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/bootstrap-3.3.4-dist/css/bootstrap.css')
-    script(src='/javascripts/jquery-1.8.2.min.js')
-    script(src='/javascripts/script.js')
+    include includes/head.jade
   body
   header 
     .container-narrow
@@ -24,7 +20,7 @@ html
     p Username :
     input(type="text" id="username" name="username" required)
     p Mot de passe :
-    input(type="password" id="passw" name="passw" required)
+    input(type="password" id="passw" name="passw" oninput="bon_mot_de_passe()" required)
     p Confirmer mot de passe :
     input(type="password" id="cpassw" name="cpassw" required)
     p Quel perso preferes-tu ?
@@ -34,4 +30,5 @@ html
        option MR TORGUE
        option Lilith
     input(type="submit" value="S'incrire")
-   
+    p Conseil(s) pour le mot de passe : <br> Il doit contenir au moins une masjucule ,une miniscule et un caractère special <br>
+    #good_passw 

@@ -58,3 +58,7 @@ margin: 0 auto;
 .recherche {
 float: right;
 }
+
+#good_passw {
+color : red ;
+}
