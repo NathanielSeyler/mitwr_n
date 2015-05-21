@@ -35,7 +35,7 @@ function verifie_password(element1,element2) {
 		{alert("Les mots de passe sont differents");
 		element1.select();
 		return false;}
-    else return true;
+        else return true;
 }
 
 function bon_mot_de_passe() {
