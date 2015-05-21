@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-//var mongoose = require('mongoose');
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -27,12 +27,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
-app.get('/inscription', function(req,res,next) {
-  res.render('inscription', {title : 'Inscription sur Mintwr'});
-});
-app.post('/c_inscription', function(req,res,next) {
-  res.render('confirmation_inscription', {title : 'Confirmation Inscription', username:req.body.username});
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -53,10 +47,9 @@ if (app.get('env') === 'development') {
       error: err
     });
   });
-  //mongoose.connect('mongodb://localhost/c_inscription');
+  
 }
 
-//mongoose.model('users',{username : String});
 
 
 // production error handler

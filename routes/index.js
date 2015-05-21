@@ -12,7 +12,7 @@ router.get('/inscription',function(req,res,next) {
 });
 
 /*Get confirmation_inscription page*/
-router.get('/c_inscription',function(req,res,next) {
+router.post('/c_inscription',function(req,res,next) {
   res.render('confirmation_inscription', {title : 'Confirmation Inscription', username:req.body.username});
 });
 
