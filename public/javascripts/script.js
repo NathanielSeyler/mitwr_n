@@ -2,9 +2,9 @@ function Hour()
 	{
 		var d = new Date();
 		var h = d.getHours();
-		var min = d.getMinutes();
+		var m = d.getMinutes();
 		var s = d.getSeconds();
-		var txt = h +" h " + min + " min " + s +" s ";
+		var txt = h +" h " + m + " min " + s +" s ";
 		setTimeout("Hour()", 1000);
 		return txt;
 	}
@@ -45,9 +45,3 @@ function bon_mot_de_passe() {
 	
 }
 
-
-/*function recherche_tweet() {
-      chaine.indexOf(document.getElementById("recherche").value,debut)	
-      
-}
-*/
