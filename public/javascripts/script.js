@@ -30,7 +30,8 @@ function tweett_post() {
 }
 
 function verifie_password(element1,element2) {
-	if(element1.value!=element2.value) 
+	if (element1.value.length<8) {return false;}
+	else if(element1.value!=element2.value) 
 		{alert("Les mots de passe sont differents");
 		element1.select();
 		return false;}
