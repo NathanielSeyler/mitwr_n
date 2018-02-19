@@ -1,0 +1,54 @@
+CP2
+3/
+axiome 3 et 4 : attention evenements DISJOINTS 2 à 2.
+union -> somme
+intersection -> produit
+
+P1: P(impossible) = 0 
+P2: P(A) + P(!A) = 1
+
+P3: P(A union B) = P(A) + P(B) - P(A inter B)
+
+P4: A -> B (cad A inclus dans B) alors P(A) <= P(B)
+
+P5: Soient A1,A2.. une suite infinie d'evenements et B1,B2 une autre 
+telle que B1 = A1 , B2 = !A1 inter A2 , B3 = !A1 inter !A2 inter A3, ...
+P(UAi) = SUM(P(Bi))
+
+dem : Bi disjoints car Bi contient Ai mais pas les Ai-1,2,3.... (tpus les A inf a Ai)
+
+P6: meme enoncé sauf suite finie que P5 alors P(UAi) <= SUM(P(Ai)) 
+dem : car Bi inclus dans Ai (donc P4)
+
+P7: meme enonce que P5 mais A1 inclus dans A2 inclus dans A3 inclus ...
+alors P(UAi) = lim(n -> +inf) P(An)
+
+P8 : A1,A2,... une suite infinie s'ev telles que A1 cointient A2 contient A3 contient ...
+P(Inter Ai) = lim(n->+inf) P(An)
+
+P9: P(A u B u C) = P(A) + P(B) + P(C)
+		  -P(A inter B) - P(A inter C) - P(B inter C)
+		  +P(A inter B inter C)
+
+5/
+Ex: Loi uniforme discrete 
+
+Une loi de proba P sur l'ens fini omega = {w1,w2,...,wn}
+est die uniforme si les proba elementaires cad P(wi) = 1/n pour tout i.
+Si A est une evenement alors P(A) = card(A)/n où card(A) represente le nombre de A.
+
+Ex : Loi uniforme continue (uniforme car m^ proba pour intervals egaux)
+[c,d] inclus dans [a,b] on a P([c,d]) = (d-c)/(b-a)
+
+6/
+axiome 3 : attention evenements 2 à 2 disjoints 
+---------------------------------------------------
+P(A|B) + P(!A|B) = 1
+
+7/
+independant: pour 3 evenements si p(A inter B) = p(A) *p(B)
+				  P(A inter C) = p(A) * P(C)
+				  P(B inter C) = P(B) * P(C)
+				  P(A inter B inter C) = P(A) * P(B) * P(C)
+
+ 
